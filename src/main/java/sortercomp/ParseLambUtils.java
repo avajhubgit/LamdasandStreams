@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class ParseLambUtils {
     public static void showFiveRandomNumbers() {
         Random random = new Random();
-        random.ints().limit(5).forEach(System.out::println);
+        random.ints().limit(5).forEachOrdered(System.out::println);
     }
 
     public static void showSquareNumbers() {
